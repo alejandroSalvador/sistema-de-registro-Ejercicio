@@ -1,0 +1,20 @@
+git clone <url repositorio> // clonar el repositorio
+
+git status // ver los cambios o si existen cambios
+
+git add . // agregar al stage
+
+git commit -m "textos del commit"
+
+git log // reviar los cambios realizados
+
+git log --oneline // revisar los cambios a linea
+
+git bransh //lista la rama que está ubicado el desarrollador
+
+git switch <nombre de la rama> // cambio de rama
+
+git merge desarrollo //traerse los cambios de desarrollo a la rama que se encuentra
+
+git push origin <nombre de la rama> //subir los cambios al repositorio
+
