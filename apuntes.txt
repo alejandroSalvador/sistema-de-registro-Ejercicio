@@ -19,3 +19,12 @@ git merge desarrollo //traerse los cambios de desarrollo a la rama que se encuen
 git push origin <nombre de la rama> //subir los cambios al repositorio
 
 git diff // ver las diferencias
+
+3. Deshacer un commit específico pero conservar el historial (recomendado si ya hiciste push)
+Si prefieres no modificar el historial (por ejemplo, si ya compartiste el commit):
+
+sh
+git revert <hash-del-commit-problemático>
+Esto crea un nuevo commit que deshace los cambios del commit especificado.
+
+Es la opción más segura para trabajo colaborativo.
