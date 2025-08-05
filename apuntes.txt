@@ -18,3 +18,4 @@ git merge desarrollo //traerse los cambios de desarrollo a la rama que se encuen
 
 git push origin <nombre de la rama> //subir los cambios al repositorio
 
+git diff // ver las diferencias
