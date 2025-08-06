@@ -1,8 +1,18 @@
+Configuraciones locales:
+
+git config --global user.name "[name]"
+git config --global user.email "[email]"
+
+git config --list
+
+**crear un repositorio***
+
 git clone <url repositorio> // clonar el repositorio
 
 git status // ver los cambios o si existen cambios
 
 git add . // agregar al stage
+git add . <nombre archivo> // agregar un archivo específico
 
 git commit -m "textos del commit"
 
@@ -12,19 +22,37 @@ git log --oneline // revisar los cambios a linea
 
 git bransh //lista la rama que está ubicado el desarrollador
 
+git checkout -b <nombre rama> //Crea una nueva rama con el nombre que especifiques (<nombre-rama>).
+
+Cambia automáticamente a esa rama recién creada (equivalente a git branch <nombre-rama> + git checkout <nombre-rama>).
+
 git switch <nombre de la rama> // cambio de rama
 
 git merge desarrollo //traerse los cambios de desarrollo a la rama que se encuentra
+
+git pull // bjar las actualizaciones del repositorio
 
 git push origin <nombre de la rama> //subir los cambios al repositorio
 
 git diff // ver las diferencias
 
+git restore --source[hash][archivo] //volver a un estado de un comiendo del archivo
+
 3. Deshacer un commit específico pero conservar el historial (recomendado si ya hiciste push)
 Si prefieres no modificar el historial (por ejemplo, si ya compartiste el commit):
 
-sh
+
 git revert <hash-del-commit-problemático>
 Esto crea un nuevo commit que deshace los cambios del commit especificado.
 
 Es la opción más segura para trabajo colaborativo.
+
+contenidos extras
+1- iniciando un repositorio con git
+https://www.aluracursos.com/blog/iniciando-repositorio-con-git
+
+2.Creando un repositorio GitHub
+https://www.aluracursos.com/blog/creando-repositorio-remoto-en-github?utm_source=gnarus&utm_medium=timeline
+
+3. Clonando un repositorio con git y GitHub
+https://www.aluracursos.com/blog/clonando-un-repositorio-remoto?utm_source=gnarus&utm_medium=timeline
