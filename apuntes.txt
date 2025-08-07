@@ -56,3 +56,10 @@ https://www.aluracursos.com/blog/creando-repositorio-remoto-en-github?utm_source
 
 3. Clonando un repositorio con git y GitHub
 https://www.aluracursos.com/blog/clonando-un-repositorio-remoto?utm_source=gnarus&utm_medium=timeline
+
+
+git branch: Una branch no es mas que un puntero para desplazamiento de un commit a otro, se puede utilizar de varias formas:
+$ git branch  //Muestra las branches exitentes en un repositorio
+$ git branch nombre_branch  //Crea una nueva branch
+$ git branch -M nombre_branch //para renombrar la branch actual
+
